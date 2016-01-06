@@ -1,0 +1,5 @@
+今天把一个列表转换成字符串输出的时候出现了UnicodeEncodeError: 'ascii' codec can't encode characters in position 32-34: ordinal not in range(128)问题
+
+import sys
+reload(sys)
+sys.setdefaultencoding( "utf-8" )
